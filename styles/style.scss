@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+$cor-principal: #362FD9;
+$cor-texto-branco: white;
+$cor-hover: black;
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  @include reset;
+}
+
+a {
+  text-decoration: none;
+  color: $cor-texto-branco;
+  font-size: 20px;
+}
+
+
+header {
+  background-color: $cor-principal;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+}
+
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin: 0 15px;
+    }
+
+    a {
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $cor-hover;
+      }
+    }
+  }
+}
+
+#myCarousel {
+  width: 50%;
+  margin: auto;
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  border-radius: px;
+}
